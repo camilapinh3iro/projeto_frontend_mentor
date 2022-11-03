@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h2, h5, h6{
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: aqua;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    background-color: rgba(255, 255, 255, 1);
+    width: 35vw;
+    border-radius: 15px;
+}
+
+article>.img-primary {
+    width: 35vw;
+    border-radius: 15px 15px 0 0;
+}
+
+article>.description {
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.price{
+    padding: 10px;
+    height: 40px;
+    display: flex;
+    background-color: #f8f9FE;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.change>a{
+    color: #444;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+.proceed{
+    background-color: #3929E1;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: block;
+    border-radius: 10px;
+    box-shadow:  1px 3px 10px #3929E1;
+}
+
+.cancel{
+    color: #444;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 30px auto;
+    display: block;
+}
+
+.bg-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+@media (max-width: 550px) {
+    article{
+        width: 80vw;
+    }
+
+    article > .img-primary{
+        width: 80vw;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 768px) {
+    article{
+        width: 60vw;
+    }
+
+    article > .img-primary{
+        width: 60vw;
+    }
+}
+
+/* .description>p{
+    padding: 30px;
+     */
